@@ -79,6 +79,13 @@ public class Binary
 		return result;
 		
 	}
+	/**
+	* Bitwise Logical OR two binary variables
+	*
+	* @param num1 The first addend object
+	* @param num2 The second addend object
+	* @return A binary variable with a value of <i>num1 v num2</i>.
+	*/
 	public static Binary or(Binary num1, Binary num2)
 	{
 		int ind1=num1.number.length()-1;
@@ -99,6 +106,13 @@ public class Binary
 		Binary result=new Binary(num3);
 		return result;
 	}
+	/**
+	* Bitwise Logical AND two binary variables
+	*
+	* @param num1 The first addend object
+	* @param num2 The second addend object
+	* @return A binary variable with a value of <i>num1 ^ num2</i>.
+	*/
 	public static Binary and(Binary num1, Binary num2)
 	{
 		int ind1=num1.number.length()-1;
@@ -119,6 +133,13 @@ public class Binary
 		Binary result=new Binary(num3);
 		return result;
 	}
+	/**
+	* Multiply two binary variables
+	*
+	* @param num1 The first addend object
+	* @param num2 The second addend object
+	* @return A binary variable with a value of <i>num1 * num2</i>.
+	*/
 	public static Binary multiply(Binary num1, Binary num2){
 		int ind1=num1.number.length()-1;
 		int ind2=num2.number.length()-1;
